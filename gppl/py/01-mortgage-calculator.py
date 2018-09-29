@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Ипотечный калькулятор"""
+import sys
 
 
 class MortgageCalculator:
@@ -39,7 +40,7 @@ if __name__ == '__main__':
     default_rate = 0.1
     default_term = 5
 
-    # Ввод знаяений от пользователя
+    # Ввод значений от пользователя
     # При пустых значениях используем значения по умолчанию
     try:
         S = float(input(f'Credit value ({default_value}): ') or default_value)
@@ -47,7 +48,7 @@ if __name__ == '__main__':
                   or default_rate)
         years = float(input(f'Term ({default_term}): ') or default_term)
     except ValueError:
-        print("Don't be stupid and enter valid numbers!")
+        print("Don't be stupid and enter valid numbers!", file=sys.stderr)
         exit(1)
 
     perepl = MortgageCalculator(S, p, years).overpayments

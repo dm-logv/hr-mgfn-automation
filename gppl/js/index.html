@@ -90,7 +90,26 @@
         </div>
         <div class="field">
             <div class="field__header">Result:</div>
-            <textarea class="matrix__result field__input" name="result" value="" readonly="readonly"/>
+            <textarea class="matrix__result field__input" name="result" readonly="readonly"></textarea>
+        </div>
+    </div>
+</div>
+
+<div class="solution">
+    <script src="sorter.js"></script>
+    <div class="solution__header">Сортировщик</div>
+    <div class="sorter solution__wrapper">
+        <div class="field">
+            <div class="field__header">By Name:</div>
+            <input type="radio" class="sorter__byname field__input" name="mode" value="byname" checked/>
+        </div>
+        <div class="field">
+            <div class="field__header">By Age:</div>
+            <input type="radio" class="sorter__byage field__input" name="mode" value="byage"/>
+        </div>
+        <div class="field">
+            <div class="field__header">Result:</div>
+            <textarea class="sorter__result field__input" name="result" readonly="readonly"></textarea>
         </div>
     </div>
 </div>

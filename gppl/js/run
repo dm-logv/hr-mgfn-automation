@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+PORT=8000
+
+python -m webbrowser "http://localhost:$PORT" &
+python -m http.server $PORT

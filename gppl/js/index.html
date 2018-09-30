@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hr-mgfn-automation</title>
+
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="solution">
+    <script src="mortgage.js"></script>
+    <div class="solution__header">Ипотечный калькулятор</div>
+    <div class="mortgage solution__wrapper">
+        <div class="field">
+            <div class="field__header">Value:</div>
+            <input type="number" class="mortgage__value field__input" name="value" value="2000000"/>
+        </div>
+        <div class="field">
+            <div class="field__header">Rate, %:</div>
+            <input type="number" class="mortgage__rate field__input" name="rate" value="0.1"/>
+        </div>
+        <div class="field">
+            <div class="field__header">Term, years:</div>
+            <input type="number" class="mortgage__term field__input" name="term" value="5"/>
+        </div>
+        <div class="field">
+            <div class="field__header">Overpayments:</div>
+            <input type="text" class="mortgage__overpayments field__input" name="overpayments" value="5" readonly="readonly"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

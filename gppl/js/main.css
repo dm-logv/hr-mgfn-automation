@@ -1,0 +1,51 @@
+/* Reset */
+body, div {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, serif;
+    font-size: 16px;
+    padding: 1em;
+}
+
+
+/* Solution */
+.solution {
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    margin: 2em auto;
+    width: 30em;
+}
+
+.solution__header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.solution__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Field */
+.field {
+    display: flex;
+    margin-bottom: .2em;
+}
+
+.field__header {
+    flex-basis: 40%;
+    padding: .1em .3em;
+    text-align: right;
+}
+
+.field__input {
+}

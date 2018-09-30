@@ -11,7 +11,7 @@ var mortgage = function(root){
     };
 
     var update = function(){
-        overpaymentsNode.value = recalc(valueNode.value, rateNode.value, termNode.value)
+        overpaymentsNode.value = recalc(valueNode.value, rateNode.value / 100, termNode.value)
     };
 
     root.addEventListener("change", update);

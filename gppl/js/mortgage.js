@@ -1,6 +1,5 @@
 "use strict";
 
-var name = "mortgage";
 var mortgage = function(root){
     var valueNode = root.querySelector('.mortgage__value');
     var rateNode = root.querySelector('.mortgage__rate');
@@ -21,5 +20,5 @@ var mortgage = function(root){
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-    mortgage(document.querySelector("." + name))
+    mortgage(document.querySelector(".mortgage"))
 });

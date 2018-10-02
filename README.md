@@ -8,6 +8,7 @@
 * `gppl` — Задания по языкам общего назначения
     * `js` — JavaScript
     * `py` — Python
+    * `go` — Go
 * `sql` — Задания по SQL
 
 
@@ -37,6 +38,33 @@ cd hr-mgfn-automation/gppl/py
 ./c_wordmorph.py
 ./d_matrix.py
 ./e_sorter.py
+```
+
+
+### Go
+
+Требует установленного и настроенного окружения Go.
+
+Каждый файл выполнен в виде отдельного CLI-инструмента, 
+работающего через параметры командной строки.
+
+```sh
+cd hr-mgfn-automation/gppl/go 
+
+# Build each file separately
+for file in *.go; do go build "$file"; done
+
+./a_mortgage
+./b_multiplicity
+./c_wordmorph
+./d_matrix
+./e_sorter
+```
+
+Ключи аргументов и значения по умолчанию можно узнать с помощью `-h`:
+
+```sh
+./a_mortgage -h
 ```
 
 
